@@ -16,6 +16,8 @@ body {
 
 header {
   position: relative;
+  width: 1022px;
+  margin: 0 auto;
 }
 
 header a {
@@ -33,9 +35,15 @@ header img {
 
 section h2 {
   position: relative;
+  width: 1022px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-black);
 }
 
-section h2 span .titleImg {
+section h2 .titleImg {
   display: inline-block;
   background-image: url('../../assets/icon/shopping.svg');
   width: 30px;
@@ -46,13 +54,29 @@ section h2 span .titleImg {
 
 article {
   position: relative;
+  width: 1022px;
   top: 24px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
 article .product {
   width: 200px;
   height: 270px;
+}
+
+article .product .discount {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53px;
+  height: 30px;
+  background-color: var(--color-red-500);
+  color: var(--color-white);
+  border-radius: 0px 0px 4px 0px;
+  font-size: 16px;
+  font-weight: 600;
 }
